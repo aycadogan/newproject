@@ -5,7 +5,7 @@ import java.util.List;
 
 public class StringUtil {
 
-    static String repeatString (String s, int n) {
+    public static String repeat(String s, int n) {
 
         String result = "";
         for (int i = 1; i <= n; i++) {
@@ -14,17 +14,17 @@ public class StringUtil {
         return result;
     }
 
-    static String padLeft (String s, int n) {
+    public static String padLeft (String s, int n) {
 
-        return repeatString(" ", n - s.length()) + s;
+        return repeat(" ", n - s.length()) + s;
     }
 
-    static String padRight (String s, int n) {
+    public static String padRight (String s, int n) {
 
-        return s + repeatString(" ", n - s.length());
+        return s + repeat(" ", n - s.length());
     }
 
-    static List<Integer> listOfNumbers (int start, int end) {
+    public static List<Integer> listOfNumbers (int start, int end) {
 
         List<Integer> result = new ArrayList<Integer>();
         for (int i = start; i <= end; i++) {
